@@ -236,7 +236,7 @@ function App() {
   useEffect(() => {
     // Charger les questions locales directement
     dispatch({ type: "dataReceived", payload: localQuestions });
-  }, []);
+  }, []); // Le tableau de dépendances est vide, donc l'effet ne se déclenche qu'une fois au montage
 
   return (
     <div className="app">
